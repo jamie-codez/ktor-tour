@@ -29,4 +29,14 @@ dependencies {
     implementation("ch.qos.logback:logback-classic:$logback_version")
     testImplementation("io.ktor:ktor-server-tests-jvm:$ktor_version")
     testImplementation("org.jetbrains.kotlin:kotlin-test-junit:$kotlin_version")
+    testImplementation(kotlin("test"))
+}
+
+
+/*tasks.test {
+    useJUnitPlatform()
+}*/
+
+kotlin {
+    jvmToolchain(8)
 }
